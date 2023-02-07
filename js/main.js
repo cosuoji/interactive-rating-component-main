@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
       list[i].addEventListener("click", function(){
         // reset previously clicked option, if any
-        const previouslyclicked = list.find( li => li.classList.contains('clicked') )
+        const previouslyclicked = [ ...list ].find( li => li.classList.contains('clicked') )
         if(previouslyclicked){
           previouslyclicked.classList.remove('clicked')
           previouslyclicked.classList.add("defaultcolor")
