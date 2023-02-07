@@ -13,13 +13,16 @@ window.addEventListener('DOMContentLoaded', (event) => {
       
 
       list[i].addEventListener("click", function(){
-          if(list[i].classList.contains("defaultcolor")){
-            list[i].classList.remove("defaultcolor")
-            list[i].classList.add('clicked')
-          } 
-        else{
-          list[i].classList.add("defaultcolor")
-        }   
+        // reset previously clicked option, if any
+        const previouslyclicked = [ ...list ].find( li => li.classList.contains('clicked') )
+        if(previouslyclicked){
+          previouslyclicked.classList.remove('clicked')
+          previouslyclicked.classList.add("defaultcolor")
+        }
+
+        // update clicked option
+        list[i].classList.remove('defaultcolor')
+        list[i].classList.add('clicked')
    
          button.addEventListener("click", getValue)
     
