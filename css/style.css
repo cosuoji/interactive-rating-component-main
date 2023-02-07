@@ -1,0 +1,103 @@
+body{
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+ }
+ 
+ .container{
+   background-color: hsl(213, 19%, 18%); 
+   padding: 30px;
+   border-radius: 20px;
+ }
+ 
+ .container img{
+     text-align: left;
+ }
+ 
+ .container h2{
+    color: white;
+    text-align: left;
+ }
+ 
+ .container p{
+    color: hsl(216, 12%, 54%);
+    text-align: left;
+ }
+ 
+ #nav {
+     list-style-type: none;
+     text-align: center;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     
+   }
+ 
+ .clicked{
+   background-color: hsl(25, 97%, 53%); 
+   
+ }
+ 
+ .defaultcolor{
+    background-color: hsl(216, 12%, 8%);
+ }
+   
+   #nav li {
+     display: inline-block;
+     padding: 20px;
+     border-radius: 50%;
+     color: white;
+   }
+ 
+   #nav li:hover{
+     background-color: grey;
+   }
+ 
+  #button{
+     background-color: hsl(25, 97%, 53%);
+     border: none;
+     color: white;
+     border-radius: 15px;
+     text-align: center;
+     padding: 5px;
+     
+ }
+ 
+ #button:hover{
+   color:hsl(25, 97%, 53%);
+   background-color: white;
+ }
+ 
+ .thankyoucontainer{
+   background-color: hsl(213, 19%, 18%); 
+   padding: 30px;
+   border-radius: 20px;
+ }
+ 
+
+ 
+ .thankyoucontainer h2{
+    color: white;
+    text-align: center;
+ }
+ 
+ .thankyoucontainer .ratingtext{
+    color: hsl(25, 97%, 53%);
+    text-align: center;
+   
+ }
+ 
+ 
+ .thankyoucontainer p{
+   color: hsl(216, 12%, 54%);
+   text-align: center;
+ }
+ 
+ .hide{
+   display: none;
+ }
+
+ @media screen and (min-width:1080px){
+    .container, .thankyoucontainer{
+        margin: 200px;
+    }
+ }
